@@ -6,7 +6,8 @@ namespace Array_Helper
     {
         static void Main(string[] args)
         {
-            {
+            // для проверки int
+            /*{
                 int[] arr1 = {1,2,3,4,5,6,7,8};
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("Ваш массив типа int: ");
@@ -31,7 +32,8 @@ namespace Array_Helper
                 Console.WriteLine($"Новый размер вашего массива: {ArrayHelper.UnShift(ref arr1, var2)}");
                 Console.Write("Стало: ");
                 for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
-            }
+            }*/
+            // для проверки string
             {
                 string[] arr1 = {"Кошка","Собака","Зебра","Крокодил","Лев"};
                 Console.ForegroundColor = ConsoleColor.Green;
@@ -59,7 +61,8 @@ namespace Array_Helper
                 for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
             
             }
-            {
+            // для проверки double
+            /*{
                 double[] arr1 = {1.3,2,3,4.5,5,6.7,7,8.0006};
                 Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("\nВаш массив типа double: ");
@@ -84,8 +87,9 @@ namespace Array_Helper
                 Console.WriteLine($"Новый размер вашего массива: {ArrayHelper.UnShift(ref arr1, var2)}");
                 Console.Write("Стало: ");
                 for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
-            }
-            {
+            }*/
+            // для проверки decimal
+            /*{
                 decimal[] arr1 = {1m,2.01m,3.03m,4.4m,5m,6m,7.7m,8.08m};
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("\nВаш массив типа decimal: ");
@@ -110,8 +114,9 @@ namespace Array_Helper
                 Console.WriteLine($"Новый размер вашего массива: {ArrayHelper.UnShift(ref arr1, var2)}");
                 Console.Write("Стало: ");
                 for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
-            }
-            {
+            }*/
+            //для проверки float
+            /*{
                 float[] arr1 = {1f,2f,3f,4.007f,5f,6f,7.009f,8f};
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("\nВаш массив типа float: ");
@@ -136,7 +141,7 @@ namespace Array_Helper
                 Console.WriteLine($"Новый размер вашего массива: {ArrayHelper.UnShift(ref arr1, var2)}");
                 Console.Write("Стало: ");
                 for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
-            }
+            }*/
             Console.ForegroundColor = ConsoleColor.White;
         }
     }
