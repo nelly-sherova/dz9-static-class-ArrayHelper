@@ -6,10 +6,138 @@ namespace Array_Helper
     {
         static void Main(string[] args)
         {
-            float[] arr = {1.5f,2.6f,3.7f,4.3f,5f,6,7f,8f};
-            for (int i = 0; i < arr.Length; i++) Console.Write($"{arr[i]}  ");
-            Console.WriteLine(ArrayHelper.UnShift(ref arr,6.0008f));
-            for (int i = 0; i < arr.Length; i++) Console.Write($"{arr[i]}  ");
+            {
+                int[] arr1 = {1,2,3,4,5,6,7,8};
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Ваш массив типа int: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+                Console.WriteLine("\nВаш массив после использования метода Pop: ");
+                Console.WriteLine($"Удалили: {ArrayHelper.Pop(ref arr1)}");
+                Console.Write("Осталось: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+                Console.WriteLine("\nВаш массив после использования метода Push: ");
+                Console.WriteLine("Введите элемент которого хотите добавить в конец массива:");
+                int var1 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine($"Новый размер вашего массива: {ArrayHelper.Push(ref arr1, var1)}");
+                Console.Write("Стало: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+                Console.WriteLine("\nВаш массив после использования метода Shift: ");
+                Console.WriteLine($"Удалили: {ArrayHelper.Shift(ref arr1)}");
+                Console.Write("Осталось: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+                Console.WriteLine("\nВаш массив после использования метода UnShift: ");
+                Console.WriteLine("Введите элемент которого хотите добавить в начало массива:");
+                int var2 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine($"Новый размер вашего массива: {ArrayHelper.UnShift(ref arr1, var2)}");
+                Console.Write("Стало: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+            }
+            {
+                string[] arr1 = {"Кошка","Собака","Зебра","Крокодил","Лев"};
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("\nВаш массив типа string: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+                Console.WriteLine("\nВаш массив после использования метода Pop: ");
+                Console.WriteLine($"Удалили: {ArrayHelper.Pop(ref arr1)}");
+                Console.Write("Осталось: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+                Console.WriteLine("\nВаш массив после использования метода Push: ");
+                Console.WriteLine("Введите элемент которого хотите добавить в конец массива:");
+                string var1 = Console.ReadLine();
+                Console.WriteLine($"Новый размер вашего массива: {ArrayHelper.Push(ref arr1, var1)}");
+                Console.Write("Стало: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+                Console.WriteLine("\nВаш массив после использования метода Shift: ");
+                Console.WriteLine($"Удалили: {ArrayHelper.Shift(ref arr1)}");
+                Console.Write("Осталось: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+                Console.WriteLine("\nВаш массив после использования метода UnShift: ");
+                Console.WriteLine("Введите элемент которого хотите добавить в начало массива:");
+                string var2 = Console.ReadLine();
+                Console.WriteLine($"Новый размер вашего массива: {ArrayHelper.UnShift(ref arr1, var2)}");
+                Console.Write("Стало: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+            
+            }
+            {
+                double[] arr1 = {1.3,2,3,4.5,5,6.7,7,8.0006};
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("\nВаш массив типа double: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+                Console.WriteLine("\nВаш массив после использования метода Pop: ");
+                Console.WriteLine($"Удалили: {ArrayHelper.Pop(ref arr1)}");
+                Console.Write("Осталось: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+                Console.WriteLine("\nВаш массив после использования метода Push: ");
+                Console.WriteLine("Введите элемент которого хотите добавить в конец массива:");
+                double var1 = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine($"Новый размер вашего массива: {ArrayHelper.Push(ref arr1, var1)}");
+                Console.Write("Стало: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+                Console.WriteLine("\nВаш массив после использования метода Shift: ");
+                Console.WriteLine($"Удалили: {ArrayHelper.Shift(ref arr1)}");
+                Console.Write("Осталось: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+                Console.WriteLine("\nВаш массив после использования метода UnShift: ");
+                Console.WriteLine("Введите элемент которого хотите добавить в начало массива:");
+                double var2 = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine($"Новый размер вашего массива: {ArrayHelper.UnShift(ref arr1, var2)}");
+                Console.Write("Стало: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+            }
+            {
+                decimal[] arr1 = {1m,2.01m,3.03m,4.4m,5m,6m,7.7m,8.08m};
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("\nВаш массив типа decimal: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+                Console.WriteLine("\nВаш массив после использования метода Pop: ");
+                Console.WriteLine($"Удалили: {ArrayHelper.Pop(ref arr1)}");
+                Console.Write("Осталось: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+                Console.WriteLine("\nВаш массив после использования метода Push: ");
+                Console.WriteLine("Введите элемент которого хотите добавить в конец массива:");
+                decimal var1 = Convert.ToDecimal(Console.ReadLine());
+                Console.WriteLine($"Новый размер вашего массива: {ArrayHelper.Push(ref arr1, var1)}");
+                Console.Write("Стало: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+                Console.WriteLine("\nВаш массив после использования метода Shift: ");
+                Console.WriteLine($"Удалили: {ArrayHelper.Shift(ref arr1)}");
+                Console.Write("Осталось: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+                Console.WriteLine("\nВаш массив после использования метода UnShift: ");
+                Console.WriteLine("Введите элемент которого хотите добавить в начало массива:");
+                decimal var2 = Convert.ToDecimal(Console.ReadLine());
+                Console.WriteLine($"Новый размер вашего массива: {ArrayHelper.UnShift(ref arr1, var2)}");
+                Console.Write("Стало: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+            }
+            {
+                float[] arr1 = {1f,2f,3f,4.007f,5f,6f,7.009f,8f};
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.WriteLine("\nВаш массив типа float: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+                Console.WriteLine("\nВаш массив после использования метода Pop: ");
+                Console.WriteLine($"Удалили: {ArrayHelper.Pop(ref arr1)}");
+                Console.Write("Осталось: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+                Console.WriteLine("\nВаш массив после использования метода Push: ");
+                Console.WriteLine("Введите элемент которого хотите добавить в конец массива:");
+                float var1 = float.Parse(Console.ReadLine());
+                Console.WriteLine($"Новый размер вашего массива: {ArrayHelper.Push(ref arr1, var1)}");
+                Console.Write("Стало: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+                Console.WriteLine("\nВаш массив после использования метода Shift: ");
+                Console.WriteLine($"Удалили: {ArrayHelper.Shift(ref arr1)}");
+                Console.Write("Осталось: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+                Console.WriteLine("\nВаш массив после использования метода UnShift: ");
+                Console.WriteLine("Введите элемент которого хотите добавить в начало массива:");
+                float var2 = float.Parse(Console.ReadLine());
+                Console.WriteLine($"Новый размер вашего массива: {ArrayHelper.UnShift(ref arr1, var2)}");
+                Console.Write("Стало: ");
+                for (int i = 0; i < arr1.Length; i++) Console.Write($"{arr1[i]}  ");
+            }
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
     static class ArrayHelper
