@@ -1,0 +1,13 @@
+C:\Users\ASUS\Desktop\Array_Helper\bin\Debug\netcoreapp3.1\Array_Helper.exe
+C:\Users\ASUS\Desktop\Array_Helper\bin\Debug\netcoreapp3.1\Array_Helper.deps.json
+C:\Users\ASUS\Desktop\Array_Helper\bin\Debug\netcoreapp3.1\Array_Helper.runtimeconfig.json
+C:\Users\ASUS\Desktop\Array_Helper\bin\Debug\netcoreapp3.1\Array_Helper.runtimeconfig.dev.json
+C:\Users\ASUS\Desktop\Array_Helper\bin\Debug\netcoreapp3.1\Array_Helper.dll
+C:\Users\ASUS\Desktop\Array_Helper\bin\Debug\netcoreapp3.1\Array_Helper.pdb
+C:\Users\ASUS\Desktop\Array_Helper\obj\Debug\netcoreapp3.1\Array_Helper.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\Array_Helper\obj\Debug\netcoreapp3.1\Array_Helper.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Array_Helper\obj\Debug\netcoreapp3.1\Array_Helper.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\Array_Helper\obj\Debug\netcoreapp3.1\Array_Helper.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\Array_Helper\obj\Debug\netcoreapp3.1\Array_Helper.dll
+C:\Users\ASUS\Desktop\Array_Helper\obj\Debug\netcoreapp3.1\Array_Helper.pdb
+C:\Users\ASUS\Desktop\Array_Helper\obj\Debug\netcoreapp3.1\Array_Helper.genruntimeconfig.cache
