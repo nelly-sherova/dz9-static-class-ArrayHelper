@@ -6,9 +6,9 @@ namespace Array_Helper
     {
         static void Main(string[] args)
         {
-            float[] arr = {1.3f,2.5f,3.9f,4.0009f};
+            float[] arr = {1.2f, 3.5f, 6.7f, 8.8f, 7f};
             for (int i = 0; i < arr.Length; i++) Console.Write($"{arr[i]}  ");
-            Console.WriteLine(ArrayHelper.Push(ref arr, 7.009f) );
+            Console.WriteLine(ArrayHelper.Shift(ref arr));
             for (int i = 0; i < arr.Length; i++) Console.Write($"{arr[i]}  ");
         }
     }
@@ -73,6 +73,56 @@ namespace Array_Helper
             Array.Resize(ref arr, arr.Length+1);
             arr[arr.Length-1] = var;
             return arr.Length;
+        }
+        public static int Shift(ref int[] arr)
+        {
+            int n = arr[0];
+            for (int i = 0;i <arr.Length-1; i++)
+            {
+                arr[i] = arr[i+1];
+            }
+            Array.Resize(ref arr, arr.Length-1);
+            return n;
+        }
+        public static string Shift(ref string[] arr)
+        {
+            string n = arr[0];
+            for (int i = 0;i <arr.Length-1; i++)
+            {
+                arr[i] = arr[i+1];
+            }
+            Array.Resize(ref arr, arr.Length-1);
+            return n;
+        }
+        /*public static double Shift(ref double[] arr)
+        {
+            double n = arr[0];
+            for (int i = 0;i <arr.Length-1; i++)
+            {
+                arr[i] = arr[i+1];
+            }
+            Array.Resize(ref arr, arr.Length-1);
+            return n;
+        }
+        public static decimal Shift(ref decimal[] arr)
+        {
+            decimal n = arr[0];
+            for (int i = 0;i <arr.Length-1; i++)
+            {
+                arr[i] = arr[i+1];
+            }
+            Array.Resize(ref arr, arr.Length-1);
+            return n;
+        }*/
+        public static float Shift(ref float[] arr)
+        {
+            float n = arr[0];
+            for (int i = 0;i <arr.Length-1; i++)
+            {
+                arr[i] = arr[i+1];
+            }
+            Array.Resize(ref arr, arr.Length-1);
+            return n;
         }
     }
 }
